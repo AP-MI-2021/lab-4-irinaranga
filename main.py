@@ -88,6 +88,8 @@ def number_superprime(l):
 
 def main():
     l = []
+    test_all_negative_numbers()
+    test_minim_with_last_digit()
     while True:
         print("1. Citire lista:")
         print("2. Afisare nr. negative nenule:")
@@ -100,10 +102,10 @@ def main():
         elif optiune == "2":
             print(all_negative_numbers(l))
         elif optiune == "3":
-            print(minim_with_last_digit(l,8))
+            print(minim_with_last_digit(l))
         elif optiune == "4":
             print(last_digit(x))
-        elif optiune == "":
+        elif optiune == "x":
             break
         else:
             print("Optiune gresita! Reincercati!")
